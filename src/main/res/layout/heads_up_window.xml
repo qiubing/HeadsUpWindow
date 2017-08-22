@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.headsupnotification.HeadsUpWindow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/heads_up_window"
+    android:layout_width="260dp"
+    android:layout_height="70dp"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/heads_up_window_bg"
+    android:gravity="center">
+
+    <ImageButton
+        android:id="@+id/call_Button"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:background="#00ffffff"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:src="@mipmap/call_button"/>
+
+    <ImageButton
+        android:id="@+id/end_Button"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:background="#00ffffff"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:src="@mipmap/end_button"/>
+
+    <RelativeLayout
+        android:id="@+id/callInfoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+        <LinearLayout
+            android:id="@+id/nameAndSubInfoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="张三"/>
+
+            <ImageView
+                android:id="@+id/subIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_gravity="bottom"
+                android:baselineAlignBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/sub1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/messageAndHDLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/nameAndSubInfoLayout">
+            <TextView
+                android:id="@+id/telephony_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="4"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="#8EFFFFFF"
+                android:text="骚扰电话"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/divider"
+                android:layout_width="17dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:src="@mipmap/divider"
+                />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广东深圳"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="9"
+                android:textColor="#8EFFFFFF"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/hdIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:baselineAlignBottom="true"
+                android:layout_marginStart="2dp"
+                android:src="@mipmap/hd"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.example.headsupnotification.HeadsUpWindow>

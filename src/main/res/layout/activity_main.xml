@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/show_heads_up_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示悬浮窗"/>
+
+    <Button
+        android:id="@+id/hide_heads_up_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐藏悬浮窗"/>
+
+</LinearLayout>
